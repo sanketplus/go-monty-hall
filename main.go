@@ -25,14 +25,13 @@ func win(swap bool) bool {
 }
 
 func main() {
-	fmt.Println("Hello, playground")
-	trials := 30000
+	trials := 100000
 	successSwap := 0
-
+	swap := true
 	for i := 0; i < trials; i++ {
-		if win(true) {
+		if win(swap) {
 			successSwap++
 		}
 	}
-	fmt.Println(successSwap*100.0/trials)
+	fmt.Printf("Success with swap: %v is %d%%",swap, successSwap*100.0/trials)
 }
