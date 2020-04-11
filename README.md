@@ -29,7 +29,7 @@ There are are two possibilities once you choose a door
 
 ### 1. When you picked the correct door initially
 
-```
+```golang
         ...
 	if prize == choice {
 		if swap {
